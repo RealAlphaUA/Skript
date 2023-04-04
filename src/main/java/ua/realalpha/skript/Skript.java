@@ -89,7 +89,6 @@ public class Skript {
                 }
 
                 if (a.getVariable().toString().isEmpty()){
-                    System.out.println("a");
                     a = getSafeToken(resultTokens, i - 2);
                     if(a instanceof TokenOperator){
                         setSafeToken(resultTokens, i, null);
