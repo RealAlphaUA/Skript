@@ -8,6 +8,10 @@ public class Token {
         this.variable = variable;
     }
 
+    public boolean isString() {
+        return variable instanceof String;
+    }
+
     public boolean isNumber() {
         if (variable instanceof String) {
             try {
@@ -30,6 +34,10 @@ public class Token {
         }
 
         return 0;
+    }
+
+    public String getString() {
+        return (String) variable;
     }
 
     public Object getVariable() {

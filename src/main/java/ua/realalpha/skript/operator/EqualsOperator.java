@@ -6,11 +6,6 @@ public class EqualsOperator implements Operator {
 
     @Override
     public String getName() {
-        return "equals";
-    }
-
-    @Override
-    public String getOperator() {
         return "==";
     }
 
@@ -22,9 +17,9 @@ public class EqualsOperator implements Operator {
     @Override
     public Object process(Token a, Token b) {
 
-        if (a.isNumber() && b.isNumber()) {
+/*        if (a.isNumber() && b.isNumber()) {
             return a.toNumber().doubleValue() == b.toNumber().doubleValue();
-        }
+        }*/
 
         return a.getVariable().equals(b.getVariable());
     }

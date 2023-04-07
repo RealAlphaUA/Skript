@@ -3,13 +3,9 @@ package ua.realalpha.skript.operator;
 import ua.realalpha.skript.token.Token;
 
 public class DivideOperator implements Operator {
-    @Override
-    public String getName() {
-        return "Divide";
-    }
 
     @Override
-    public String getOperator() {
+    public String getName() {
         return "/";
     }
 

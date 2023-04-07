@@ -4,13 +4,9 @@ import ua.realalpha.skript.token.Token;
 
 public class SubtractOperator implements Operator {
 
-    @Override
-    public String getName() {
-        return "Subtract";
-    }
 
     @Override
-    public String getOperator() {
+    public String getName() {
         return "-";
     }
 

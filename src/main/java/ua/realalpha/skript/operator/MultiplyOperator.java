@@ -3,13 +3,9 @@ package ua.realalpha.skript.operator;
 import ua.realalpha.skript.token.Token;
 
 public class MultiplyOperator implements Operator {
-    @Override
-    public String getName() {
-        return "Multiply";
-    }
 
     @Override
-    public String getOperator() {
+    public String getName() {
         return "*";
     }
 
